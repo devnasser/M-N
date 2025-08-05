@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة التنفيذ التفصيلية - نظام سوق قطع السيارات الذكي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid #667eea;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .phase-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .section-title {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold text-primary">
+                        <i class="fas fa-road me-3"></i>
+                        خطة التنفيذ التفصيلية
+                    </h1>
+                    <p class="lead text-muted">نظام سوق قطع السيارات الذكي - خطة تنفيذ مدتها سنة</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="badge bg-success fs-6 p-3">
+                        <i class="fas fa-calendar-check me-2"></i>
+                        12 شهر
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <!-- Executive Summary -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-star me-3"></i>
+                    الملخص التنفيذي
+                </h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="lead">
+                            خطة تنفيذ شاملة ومفصلة لتطوير وإطلاق نظام سوق قطع السيارات الذكي 
+                            على مدى 12 شهر مع مراحل واضحة وأهداف محددة.
+                        </p>
+                        <div class="alert alert-info">
+                            <h5><i class="fas fa-info-circle me-2"></i>المعلومات الرئيسية:</h5>
+                            <ul class="mb-0">
+                                <li>مدة المشروع: <span class="highlight">12 شهر</span></li>
+                                <li>عدد المراحل: <span class="highlight">4 مراحل</span></li>
+                                <li>فريق العمل: <span class="highlight">8-12 شخص</span></li>
+                                <li>الميزانية: <span class="highlight">2.5 مليون ريال</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="phase-card text-center">
+                            <i class="fas fa-rocket fa-3x mb-3"></i>
+                            <h3>مرحلة واحدة</h3>
+                            <p>كل 3 أشهر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 1 -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-1 me-3"></i>
+                    المرحلة الأولى: التطوير الأساسي (شهر 1-3)
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-cogs me-2"></i>التطوير التقني</h4>
+                        <ul>
+                            <li>إعداد البنية التحتية</li>
+                            <li>تطوير قاعدة البيانات</li>
+                            <li>إنشاء النماذج الأساسية</li>
+                            <li>تطوير واجهات المستخدم</li>
+                            <li>إعداد نظام المصادقة</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-users me-2"></i>إدارة الفريق</h4>
+                        <ul>
+                            <li>تعيين فريق التطوير</li>
+                            <li>إعداد بيئة العمل</li>
+                            <li>تدريب الفريق</li>
+                            <li>وضع إجراءات العمل</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-primary">3 أشهر</h5>
+                            <small>مدة المرحلة</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-success">600 ألف ريال</h5>
+                            <small>الميزانية</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-warning">4 أشخاص</h5>
+                            <small>فريق العمل</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-2 me-3"></i>
+                    المرحلة الثانية: الميزات المتقدمة (شهر 4-6)
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-plus-circle me-2"></i>الميزات الجديدة</h4>
+                        <ul>
+                            <li>نظام التوصيل المتقدم</li>
+                            <li>خدمات الدفع الإلكتروني</li>
+                            <li>نظام التقييمات والمراجعات</li>
+                            <li>لوحات التحكم المتقدمة</li>
+                            <li>نظام الإشعارات</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-shield-alt me-2"></i>الأمان والاختبار</h4>
+                        <ul>
+                            <li>اختبار الأمان الشامل</li>
+                            <li>اختبار الأداء</li>
+                            <li>اختبار تجربة المستخدم</li>
+                            <li>إصلاح الأخطاء</li>
+                            <li>تحسين الأداء</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-primary">3 أشهر</h5>
+                            <small>مدة المرحلة</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-success">700 ألف ريال</h5>
+                            <small>الميزانية</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-warning">6 أشخاص</h5>
+                            <small>فريق العمل</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-3 me-3"></i>
+                    المرحلة الثالثة: الإطلاق والتسويق (شهر 7-9)
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-rocket me-2"></i>الإطلاق</h4>
+                        <ul>
+                            <li>الإطلاق التجريبي</li>
+                            <li>جمع الملاحظات</li>
+                            <li>إصلاح المشاكل</li>
+                            <li>الإطلاق الرسمي</li>
+                            <li>مراقبة الأداء</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-bullhorn me-2"></i>التسويق</h4>
+                        <ul>
+                            <li>حملة تسويقية شاملة</li>
+                            <li>التسويق الرقمي</li>
+                            <li>شراكات استراتيجية</li>
+                            <li>جذب المستخدمين الأوائل</li>
+                            <li>بناء العلامة التجارية</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-primary">3 أشهر</h5>
+                            <small>مدة المرحلة</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-success">800 ألف ريال</h5>
+                            <small>الميزانية</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-warning">8 أشخاص</h5>
+                            <small>فريق العمل</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-4 me-3"></i>
+                    المرحلة الرابعة: التوسع والتحسين (شهر 10-12)
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-expand me-2"></i>التوسع</h4>
+                        <ul>
+                            <li>إضافة ميزات جديدة</li>
+                            <li>تحسين الأداء</li>
+                            <li>التوسع الجغرافي</li>
+                            <li>شراكات جديدة</li>
+                            <li>تطوير التطبيق المحمول</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-chart-line me-2"></i>التحسين</h4>
+                        <ul>
+                            <li>تحليل البيانات</li>
+                            <li>تحسين تجربة المستخدم</li>
+                            <li>تحسين الأداء</li>
+                            <li>إضافة ميزات ذكية</li>
+                            <li>تحسين الأمان</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-primary">3 أشهر</h5>
+                            <small>مدة المرحلة</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-success">400 ألف ريال</h5>
+                            <small>الميزانية</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h5 class="text-warning">10 أشخاص</h5>
+                            <small>فريق العمل</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Structure -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-users me-3"></i>
+                    هيكل الفريق
+                </h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-primary">
+                            <div class="card-body text-center">
+                                <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                                <h5>مطورون</h5>
+                                <p>4-6 أشخاص</p>
+                                <small>Laravel, PHP, Frontend</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-success">
+                            <div class="card-body text-center">
+                                <i class="fas fa-palette fa-3x text-success mb-3"></i>
+                                <h5>مصممون</h5>
+                                <p>2-3 أشخاص</p>
+                                <small>UI/UX, Graphics</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-warning">
+                            <div class="card-body text-center">
+                                <i class="fas fa-bullhorn fa-3x text-warning mb-3"></i>
+                                <h5>تسويق</h5>
+                                <p>2-3 أشخاص</p>
+                                <small>Digital Marketing</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info">
+                            <div class="card-body text-center">
+                                <i class="fas fa-cogs fa-3x text-info mb-3"></i>
+                                <h5>إدارة</h5>
+                                <p>1-2 أشخاص</p>
+                                <small>Project Management</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Budget Breakdown -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-calculator me-3"></i>
+                    تفصيل الميزانية
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-money-bill-wave me-2"></i>التكاليف التقنية</h4>
+                        <table class="table table-striped">
+                            <tr><td>تطوير البرمجيات</td><td>1.2 مليون ريال</td></tr>
+                            <tr><td>البنية التحتية</td><td>300 ألف ريال</td></tr>
+                            <tr><td>الأدوات والبرامج</td><td>200 ألف ريال</td></tr>
+                            <tr><td>الاختبار والجودة</td><td>150 ألف ريال</td></tr>
+                            <tr class="table-primary"><td><strong>الإجمالي</strong></td><td><strong>1.85 مليون ريال</strong></td></tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-users me-2"></i>التكاليف التشغيلية</h4>
+                        <table class="table table-striped">
+                            <tr><td>الرواتب والبدلات</td><td>400 ألف ريال</td></tr>
+                            <tr><td>التسويق والإعلان</td><td>200 ألف ريال</td></tr>
+                            <tr><td>المكاتب والمعدات</td><td>50 ألف ريال</td></tr>
+                            <tr><td>مصاريف أخرى</td><td>50 ألف ريال</td></tr>
+                            <tr class="table-success"><td><strong>الإجمالي</strong></td><td><strong>700 ألف ريال</strong></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Management -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-shield-alt me-3"></i>
+                    إدارة المخاطر
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-danger">
+                            <div class="card-body">
+                                <h5 class="text-danger"><i class="fas fa-exclamation-triangle me-2"></i>مخاطر تقنية</h5>
+                                <ul class="small">
+                                    <li>تأخر في التطوير</li>
+                                    <li>مشاكل في الأداء</li>
+                                    <li>مشاكل أمنية</li>
+                                </ul>
+                                <p class="small"><strong>الإجراءات:</strong> تطوير تدريجي، اختبار مستمر، مراقبة الأداء</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <h5 class="text-warning"><i class="fas fa-users me-2"></i>مخاطر بشرية</h5>
+                                <ul class="small">
+                                    <li>استقالة موظفين</li>
+                                    <li>نقص في المهارات</li>
+                                    <li>تضارب في الأدوار</li>
+                                </ul>
+                                <p class="small"><strong>الإجراءات:</strong> تدريب مستمر، عقود واضحة، فريق احتياطي</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h5 class="text-info"><i class="fas fa-chart-line me-2"></i>مخاطر السوق</h5>
+                                <ul class="small">
+                                    <li>منافسة قوية</li>
+                                    <li>تغييرات في السوق</li>
+                                    <li>مشاكل اقتصادية</li>
+                                </ul>
+                                <p class="small"><strong>الإجراءات:</strong> مراقبة السوق، مرونة في الخطط، تنويع الاستراتيجيات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-bar me-3"></i>
+                    مؤشرات النجاح
+                </h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-users fa-3x mb-3"></i>
+                            <h3>10,000</h3>
+                            <p>مستخدم نشط</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-store fa-3x mb-3"></i>
+                            <h3>500</h3>
+                            <p>متجر مسجل</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-shopping-cart fa-3x mb-3"></i>
+                            <h3>5,000</h3>
+                            <p>طلب شهري</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-star fa-3x mb-3"></i>
+                            <h3>4.5</h3>
+                            <p>تقييم المستخدمين</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة الخصائص الأساسية - نظام سوق قطع السيارات</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: rgba(255,255,255,0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; text-align: center; }
+        .header h1 { color: #2c3e50; font-size: 2.5em; margin-bottom: 10px; }
+        .category { background: rgba(255,255,255,0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; }
+        .category h2 { color: #2c3e50; font-size: 1.8em; margin-bottom: 20px; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        .feature { background: #f8f9fa; padding: 15px; border-radius: 10px; border-left: 4px solid #3498db; }
+        .feature-title { font-weight: bold; color: #2c3e50; margin-bottom: 5px; }
+        .feature-desc { font-size: 0.9em; color: #7f8c8d; }
+        .priority-high { border-left-color: #e74c3c; background: #fdeaea; }
+        .priority-medium { border-left-color: #f39c12; background: #fff3cd; }
+        .priority-low { border-left-color: #27ae60; background: #e8f5e8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 قائمة الخصائص الأساسية</h1>
+            <p>100+ خاصية متقدمة لنظام سوق قطع السيارات الذكي</p>
+        </div>
+
+        <!-- إدارة المستخدمين -->
+        <div class="category">
+            <h2>👥 إدارة المستخدمين والصلاحيات</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام تسجيل دخول متعدد العوامل</div>
+                    <div class="feature-desc">دعم SMS, Email, Google Authenticator</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">إدارة الأدوار والصلاحيات المتقدمة</div>
+                    <div class="feature-desc">Admin, Shop, Driver, Technician, Buyer</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">التحقق من الهوية الوطنية</div>
+                    <div class="feature-desc">تكامل مع نظام الهوية الوطنية</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">التحقق من رخصة القيادة</div>
+                    <div class="feature-desc">تكامل مع إدارة المرور</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">نظام النقاط والمكافآت</div>
+                    <div class="feature-desc">تراكم النقاط والمكافآت للمستخدمين</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">الملف الشخصي التفاعلي</div>
+                    <div class="feature-desc">تخصيص كامل للملف الشخصي</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- إدارة المنتجات -->
+        <div class="category">
+            <h2>📦 إدارة المنتجات والمخزون</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">إضافة منتج متقدم</div>
+                    <div class="feature-desc">صور متعددة، وصف تفصيلي، مواصفات تقنية</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام التصنيفات المتداخل</div>
+                    <div class="feature-desc">تصنيفات رئيسية وفرعية غير محدودة</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">إدارة المخزون الذكية</div>
+                    <div class="feature-desc">تنبيهات المخزون المنخفض، إعادة الطلب التلقائي</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">نظام الخصومات والكوبونات</div>
+                    <div class="feature-desc">خصومات نسبية ومطلقة، كوبونات محدودة</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">مقارنة المنتجات</div>
+                    <div class="feature-desc">مقارنة تفصيلية بين المنتجات</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">نظام العلامات التجارية</div>
+                    <div class="feature-desc">إدارة العلامات التجارية والشركات</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- السلة والدفع -->
+        <div class="category">
+            <h2>🛒 السلة والدفع</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">سلة تسوق ذكية</div>
+                    <div class="feature-desc">حفظ السلة، حساب الضرائب، الشحن</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام الدفع المتعدد</div>
+                    <div class="feature-desc">Mada, STC Pay, PayPal, Credit Cards</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">نظام الشحن المتقدم</div>
+                    <div class="feature-desc">SMSA, Aramex, Saudi Post, التوصيل المحلي</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">حساب الضرائب التلقائي</div>
+                    <div class="feature-desc">حساب ضريبة القيمة المضافة تلقائياً</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">نظام الكوبونات والخصومات</div>
+                    <div class="feature-desc">كوبونات الخصم، كوبونات الشحن المجاني</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">نظام النقاط والاسترداد</div>
+                    <div class="feature-desc">استخدام النقاط في الدفع</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- البحث والاكتشاف -->
+        <div class="category">
+            <h2>🔍 البحث والاكتشاف</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">بحث ذكي متقدم</div>
+                    <div class="feature-desc">بحث بالكلمات المفتاحية، التصنيف، السعر</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">نظام التوصيات الذكي</div>
+                    <div class="feature-desc">توصيات مخصصة بناءً على السلوك</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">فلترة متقدمة</div>
+                    <div class="feature-desc">فلترة بالسعر، العلامة التجارية، التقييم</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">البحث بالصورة</div>
+                    <div class="feature-desc">البحث عن المنتجات باستخدام الصور</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">البحث الصوتي</div>
+                    <div class="feature-desc">البحث باستخدام الأوامر الصوتية</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">نظام الاقتراحات</div>
+                    <div class="feature-desc">اقتراحات البحث أثناء الكتابة</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الإشعارات والتواصل -->
+        <div class="category">
+            <h2>🔔 الإشعارات والتواصل</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام إشعارات متعدد القنوات</div>
+                    <div class="feature-desc">Email, SMS, Push Notifications, In-App</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">إشعارات في الوقت الفعلي</div>
+                    <div class="feature-desc">WebSocket للرسائل الفورية</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">نظام الرسائل الداخلية</div>
+                    <div class="feature-desc">رسائل بين المستخدمين والبائعين</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">نظام الدردشة المباشرة</div>
+                    <div class="feature-desc">دردشة مباشرة مع خدمة العملاء</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">إشعارات المخزون</div>
+                    <div class="feature-desc">إشعارات عند توفر المنتجات</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">إشعارات الطلبات</div>
+                    <div class="feature-desc">تحديثات حالة الطلب</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- التحليلات والتقارير -->
+        <div class="category">
+            <h2>📊 التحليلات والتقارير</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">لوحة تحكم تحليلات شاملة</div>
+                    <div class="feature-desc">إحصائيات المبيعات، المنتجات، المستخدمين</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تحليل سلوك المستخدمين</div>
+                    <div class="feature-desc">تتبع سلوك التصفح والشراء</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تقارير المبيعات التفصيلية</div>
+                    <div class="feature-desc">تقارير يومية، أسبوعية، شهرية</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">تحليل الأداء والتحسين</div>
+                    <div class="feature-desc">تحليل سرعة الموقع والأداء</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">تقارير المخزون</div>
+                    <div class="feature-desc">تحليل حركة المخزون والتنبؤات</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تحليل المنافسة</div>
+                    <div class="feature-desc">مقارنة الأسعار والمنتجات</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الأمان والحماية -->
+        <div class="category">
+            <h2>🔐 الأمان والحماية</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام كشف الاحتيال</div>
+                    <div class="feature-desc">كشف المعاملات المشبوهة</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">تشفير البيانات المتقدم</div>
+                    <div class="feature-desc">تشفير البيانات الحساسة</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">نظام مراقبة النشاط</div>
+                    <div class="feature-desc">تتبع الأنشطة المشبوهة</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">حماية من هجمات DDoS</div>
+                    <div class="feature-desc">حماية من الهجمات الإلكترونية</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">نظام النسخ الاحتياطي</div>
+                    <div class="feature-desc">نسخ احتياطي تلقائي للبيانات</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">حماية من SQL Injection</div>
+                    <div class="feature-desc">حماية قاعدة البيانات</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- التكامل الحكومي -->
+        <div class="category">
+            <h2>🏛️ التكامل الحكومي</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">تكامل نظام SABER</div>
+                    <div class="feature-desc">التوافق مع معايير السلامة السعودية</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">تكامل نظام Nafes</div>
+                    <div class="feature-desc">التكامل مع منصة نافس للتوظيف</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">تكامل نظام ZATCA</div>
+                    <div class="feature-desc">الفواتير الإلكترونية والضرائب</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تكامل إدارة المرور</div>
+                    <div class="feature-desc">التحقق من رخص القيادة والمركبات</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تكامل الهوية الوطنية</div>
+                    <div class="feature-desc">التحقق من الهوية الوطنية</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">تكامل وزارة التجارة</div>
+                    <div class="feature-desc">التحقق من السجلات التجارية</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- إمكانية الوصول -->
+        <div class="category">
+            <h2>♿ إمكانية الوصول</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">واجهة صوتية متقدمة</div>
+                    <div class="feature-desc">التفاعل الصوتي للمستخدمين الأميين</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام الرموز البصرية</div>
+                    <div class="feature-desc">رموز بسيطة للمستخدمين الأميين</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">دعم قارئ الشاشة</div>
+                    <div class="feature-desc">توافق كامل مع قارئات الشاشة</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تكبير النصوص</div>
+                    <div class="feature-desc">إمكانية تكبير النصوص والصور</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">تباين عالي</div>
+                    <div class="feature-desc">وضع التباين العالي للمستخدمين</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">تنقل بلوحة المفاتيح</div>
+                    <div class="feature-desc">التنقل الكامل بلوحة المفاتيح</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الأداء والتحسين -->
+        <div class="category">
+            <h2>⚡ الأداء والتحسين</h2>
+            <div class="features">
+                <div class="feature priority-high">
+                    <div class="feature-title">تحسين قاعدة البيانات</div>
+                    <div class="feature-desc">فهرسة متقدمة، استعلامات محسنة</div>
+                </div>
+                <div class="feature priority-high">
+                    <div class="feature-title">نظام التخزين المؤقت</div>
+                    <div class="feature-desc">تخزين مؤقت متعدد المستويات</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تحسين الصور</div>
+                    <div class="feature-desc">ضغط الصور، أحجام متعددة</div>
+                </div>
+                <div class="feature priority-medium">
+                    <div class="feature-title">تحميل تدريجي للمحتوى</div>
+                    <div class="feature-desc">Lazy Loading للمنتجات والصور</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">ضغط الملفات</div>
+                    <div class="feature-desc">ضغط CSS, JavaScript, HTML</div>
+                </div>
+                <div class="feature priority-low">
+                    <div class="feature-title">تحسين SEO</div>
+                    <div class="feature-desc">تحسين محركات البحث</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <h2>🎯 ملخص الخصائص</h2>
+            <p>تم تحديد 100+ خاصية أساسية للنظام، مصنفة حسب الأولوية لتسهيل التطوير والتنفيذ</p>
+        </div>
+    </div>
+</body>
+</html> 

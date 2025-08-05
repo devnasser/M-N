@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعمارية العامة - منصة قطع غيار السيارات الذكية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+        
+        :root {
+            --primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --warning: linear-gradient(135deg, #f9ca24 0%, #f0932b 100%);
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--primary);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        
+        .nav {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .nav a {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav a:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            background: var(--primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .architecture-diagram {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .layer {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .layer-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            min-width: 200px;
+        }
+        
+        .layer-item h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        
+        .layer-item ul {
+            list-style: none;
+            text-align: right;
+        }
+        
+        .layer-item li {
+            padding: 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .layer-item li::before {
+            content: '• ';
+            color: #667eea;
+        }
+        
+        .flow-diagram {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .flow-step {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .flow-step::after {
+            content: '→';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #667eea;
+        }
+        
+        .flow-step:last-child::after {
+            display: none;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .tech-item {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .tech-item h4 {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .tech-item ul {
+            list-style: none;
+            text-align: right;
+        }
+        
+        .tech-item li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tech-item li:last-child {
+            border-bottom: none;
+        }
+        
+        @media (max-width: 768px) {
+            .layer { flex-direction: column; }
+            .flow-diagram { grid-template-columns: 1fr; }
+            .tech-stack { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ المعمارية العامة</h1>
+            <p>تصميم وهيكل منصة قطع غيار السيارات الذكية</p>
+        </div>
+        
+        <div class="nav">
+            <a href="index.html">🏠 الرئيسية</a>
+            <a href="database.html">🗄️ قاعدة البيانات</a>
+            <a href="models.html">📋 النماذج</a>
+            <a href="controllers.html">⚙️ المتحكمات</a>
+            <a href="routes.html">🛣️ المسارات</a>
+            <a href="views.html">🎨 الواجهات</a>
+        </div>
+        
+        <div class="section">
+            <h2>📐 هيكل المشروع</h2>
+            <div class="architecture-diagram">
+                <div class="layer">
+                    <div class="layer-item">
+                        <h4>🎨 طبقة العرض (Views)</h4>
+                        <ul>
+                            <li>Blade Templates</li>
+                            <li>CSS/JavaScript</li>
+                            <li>Bootstrap 5</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="layer-item">
+                        <h4>⚙️ طبقة المنطق (Controllers)</h4>
+                        <ul>
+                            <li>HomeController</li>
+                            <li>AuthController</li>
+                            <li>ProductController</li>
+                            <li>Dashboard Controllers</li>
+                        </ul>
+                    </div>
+                    <div class="layer-item">
+                        <h4>📋 طبقة البيانات (Models)</h4>
+                        <ul>
+                            <li>User Model</li>
+                            <li>Product Model</li>
+                            <li>Order Model</li>
+                            <li>Shop Model</li>
+                        </ul>
+                    </div>
+                    <div class="layer-item">
+                        <h4>🗄️ قاعدة البيانات</h4>
+                        <ul>
+                            <li>SQLite3</li>
+                            <li>14 Tables</li>
+                            <li>Relationships</li>
+                            <li>Indexes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔄 التدفق العام للنظام</h2>
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <h4>👤 المستخدم</h4>
+                    <p>يدخل إلى النظام ويبدأ التصفح</p>
+                </div>
+                <div class="flow-step">
+                    <h4>🎨 الواجهة</h4>
+                    <p>يعرض الصفحات والمنتجات</p>
+                </div>
+                <div class="flow-step">
+                    <h4>⚙️ المتحكم</h4>
+                    <p>يتعامل مع الطلبات والمنطق</p>
+                </div>
+                <div class="flow-step">
+                    <h4>📋 النموذج</h4>
+                    <p>يتعامل مع البيانات والعلاقات</p>
+                </div>
+                <div class="flow-step">
+                    <h4>🗄️ قاعدة البيانات</h4>
+                    <p>تخزن وتسترجع البيانات</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🛠️ التقنيات المستخدمة</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h4>🔧 Backend</h4>
+                    <ul>
+                        <li>Laravel 12</li>
+                        <li>PHP 8.2+</li>
+                        <li>SQLite3</li>
+                        <li>Livewire 3</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>🎨 Frontend</h4>
+                    <ul>
+                        <li>Bootstrap 5</li>
+                        <li>CSS3/HTML5</li>
+                        <li>JavaScript</li>
+                        <li>Font Awesome</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>🔐 الأمان</h4>
+                    <ul>
+                        <li>Laravel Sanctum</li>
+                        <li>CSRF Protection</li>
+                        <li>Role-based Access</li>
+                        <li>Input Validation</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>⚡ الأداء</h4>
+                    <ul>
+                        <li>Laravel Cache</li>
+                        <li>Database Indexing</li>
+                        <li>Image Optimization</li>
+                        <li>Eager Loading</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📁 هيكل المجلدات</h2>
+            <pre style="background: var(--light); padding: 20px; border-radius: 10px; overflow-x: auto;">
+alpha_version/
+├── app/
+│   ├── Http/Controllers/     # المتحكمات
+│   ├── Models/              # النماذج
+│   ├── Services/            # الخدمات
+│   └── Helpers/             # المساعدات
+├── database/
+│   ├── migrations/          # ملفات الترحيل
+│   └── seeders/            # عينات البيانات
+├── resources/
+│   └── views/              # ملفات الواجهات
+├── routes/
+│   └── web.php             # مسارات الويب
+├── storage/
+│   └── app/public/         # الملفات العامة
+└── public/
+    ├── css/                # ملفات CSS
+    ├── js/                 # ملفات JavaScript
+    └── images/             # الصور
+            </pre>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 المكونات الأساسية</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h4>👥 إدارة المستخدمين</h4>
+                    <ul>
+                        <li>تسجيل الدخول/الخروج</li>
+                        <li>إدارة الملف الشخصي</li>
+                        <li>نظام الصلاحيات</li>
+                        <li>5 أنواع مستخدمين</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>🛍️ إدارة المنتجات</h4>
+                    <ul>
+                        <li>إضافة/تعديل المنتجات</li>
+                        <li>إدارة الصور</li>
+                        <li>البحث والتصفية</li>
+                        <li>نظام المفضلة</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>🏪 إدارة المتاجر</h4>
+                    <ul>
+                        <li>إنشاء المتاجر</li>
+                        <li>إدارة المخزون</li>
+                        <li>إدارة الطلبات</li>
+                        <li>الإحصائيات</li>
+                    </ul>
+                </div>
+                <div class="tech-item">
+                    <h4>🚚 إدارة التوصيل</h4>
+                    <ul>
+                        <li>إدارة السائقين</li>
+                        <li>تتبع الطلبات</li>
+                        <li>حساب التكلفة</li>
+                        <li>التقييمات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

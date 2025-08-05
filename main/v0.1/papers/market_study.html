@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دراسة السوق - نظام سوق قطع السيارات الذكي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid #667eea;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .metric-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .section-title {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold text-primary">
+                        <i class="fas fa-chart-bar me-3"></i>
+                        دراسة السوق الشاملة
+                    </h1>
+                    <p class="lead text-muted">سوق قطع السيارات في المملكة العربية السعودية</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="badge bg-primary fs-6 p-3">
+                        <i class="fas fa-chart-line me-2"></i>
+                        سوق متنامي
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <!-- Market Overview -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-globe me-3"></i>
+                    نظرة عامة على السوق
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-info-circle me-2"></i>معلومات السوق</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>حجم السوق: 15 مليار ريال سنويًا</li>
+                            <li><i class="fas fa-check text-success me-2"></i>معدل النمو: 12% سنويًا</li>
+                            <li><i class="fas fa-check text-success me-2"></i>عدد السيارات: 15 مليون سيارة</li>
+                            <li><i class="fas fa-check text-success me-2"></i>عدد المتاجر: 5,000 متجر</li>
+                            <li><i class="fas fa-check text-success me-2"></i>التحول الرقمي: 25%</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-trending-up me-2"></i>مؤشرات النمو</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="text-center p-3 bg-light rounded">
+                                    <h5 class="text-primary">12%</h5>
+                                    <small>نمو سنوي</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center p-3 bg-light rounded">
+                                    <h5 class="text-success">25%</h5>
+                                    <small>تحول رقمي</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Target Market -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-users me-3"></i>
+                    السوق المستهدف
+                </h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-user fa-3x mb-3"></i>
+                            <h3>35 مليون</h3>
+                            <p>سكان السعودية</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-car fa-3x mb-3"></i>
+                            <h3>15 مليون</h3>
+                            <p>سيارة مسجلة</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-store fa-3x mb-3"></i>
+                            <h3>5,000</h3>
+                            <p>متجر قطع سيارات</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card text-center">
+                            <i class="fas fa-tools fa-3x mb-3"></i>
+                            <h3>50,000</h3>
+                            <p>فني سيارات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competition Analysis -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-chess me-3"></i>
+                    تحليل المنافسة
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-exclamation-triangle me-2"></i>المنافسون الحاليون</h4>
+                        <ul>
+                            <li>متاجر تقليدية (90% من السوق)</li>
+                            <li>مواقع إلكترونية بسيطة (5% من السوق)</li>
+                            <li>تطبيقات محلية محدودة (3% من السوق)</li>
+                            <li>منصات دولية (2% من السوق)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-lightbulb me-2"></i>مزايانا التنافسية</h4>
+                        <ul>
+                            <li>منصة متكاملة وشاملة</li>
+                            <li>خدمات متعددة في مكان واحد</li>
+                            <li>تقنيات متطورة وذكية</li>
+                            <li>دعم متعدد اللغات</li>
+                            <li>واجهات سهلة الاستخدام</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Market Trends -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-line me-3"></i>
+                    اتجاهات السوق
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h5 class="text-primary"><i class="fas fa-mobile-alt me-2"></i>التحول الرقمي</h5>
+                                <p>زيادة الطلب على الخدمات الرقمية والتسوق الإلكتروني</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <h5 class="text-success"><i class="fas fa-shipping-fast me-2"></i>خدمات التوصيل</h5>
+                                <p>نمو سريع في خدمات التوصيل السريع والموثوق</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <h5 class="text-warning"><i class="fas fa-star me-2"></i>الجودة والموثوقية</h5>
+                                <p>تركيز متزايد على جودة المنتجات وموثوقية الخدمات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Streams -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-money-bill-wave me-3"></i>
+                    مصادر الإيرادات
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-percentage me-2"></i>عمولات المبيعات</h4>
+                        <p>عمولة 5-10% على كل عملية بيع</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" style="width: 60%">60% من الإيرادات</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-credit-card me-2"></i>اشتراكات المتاجر</h4>
+                        <p>اشتراكات شهرية للمتاجر المميزة</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 20%">20% من الإيرادات</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-truck me-2"></i>خدمات التوصيل</h4>
+                        <p>عمولة على خدمات التوصيل</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning" style="width: 15%">15% من الإيرادات</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-tools me-2"></i>الخدمات الفنية</h4>
+                        <p>عمولة على الخدمات الفنية</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-info" style="width: 5%">5% من الإيرادات</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Market Opportunities -->
+        <div class="card mb-5">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-rocket me-3"></i>
+                    الفرص السوقية
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <h5 class="text-success"><i class="fas fa-expand me-2"></i>التوسع الجغرافي</h5>
+                                <p>إمكانية التوسع إلى دول الخليج الأخرى</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h5 class="text-primary"><i class="fas fa-plus me-2"></i>خدمات إضافية</h5>
+                                <p>إضافة خدمات التأمين والصيانة الوقائية</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <h5 class="text-warning"><i class="fas fa-handshake me-2"></i>شراكات استراتيجية</h5>
+                                <p>شراكات مع شركات السيارات والبنوك</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title">
+                    <i class="fas fa-flag-checkered me-3"></i>
+                    الخلاصة
+                </h2>
+                <div class="alert alert-success">
+                    <h4><i class="fas fa-thumbs-up me-2"></i>السوق <span class="highlight">واعد ومتاح</span></h4>
+                    <p class="lead">
+                        سوق قطع السيارات في السعودية يوفر فرص استثمارية ممتازة مع وجود 
+                        سوق كبير ومتنامي وفرص تحول رقمي كبيرة.
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-plus me-2"></i>نقاط القوة</h5>
+                        <ul>
+                            <li>سوق كبير ومتنامي</li>
+                            <li>تحول رقمي سريع</li>
+                            <li>منافسة محدودة</li>
+                            <li>إمكانية نمو عالية</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-lightbulb me-2"></i>التوصيات</h5>
+                        <ul>
+                            <li>البدء فورًا في التطوير</li>
+                            <li>التركيز على الجودة</li>
+                            <li>بناء شراكات قوية</li>
+                            <li>التوسع التدريجي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

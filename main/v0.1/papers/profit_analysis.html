@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دراسة الربحية الشاملة - نظام سوق قطع السيارات الذكي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .financial-highlight {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .cost-breakdown {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .revenue-stream {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .team-info {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .metric-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .metric-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <header class="header py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-4 fw-bold"><i class="fas fa-chart-line me-3"></i>دراسة الربحية الشاملة</h1>
+                        <p class="lead">تحليل مالي شامل لمشروع نظام سوق قطع السيارات الذكي - فريق العمل الفردي</p>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="badge bg-success fs-6 p-3"><i class="fas fa-coins me-2"></i>ربحية عالية</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- معلومات الفريق -->
+        <div class="team-info">
+            <h3><i class="fas fa-user me-3"></i>معلومات الفريق</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>المطور:</strong> Nasser Alanazi</p>
+                    <p><strong>البريد الإلكتروني:</strong> dev-na@outlook.com</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>الهاتف:</strong> 966508480715</p>
+                    <p><strong>نوع الفريق:</strong> فريق عمل فردي</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- الملخص التنفيذي -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-star me-3"></i>الملخص التنفيذي</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="financial-highlight">
+                            <h4><i class="fas fa-trophy me-2"></i>الربحية المتوقعة</h4>
+                            <div class="metric-value">1,117%</div>
+                            <div class="metric-label">معدل العائد على الاستثمار</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="financial-highlight">
+                            <h4><i class="fas fa-clock me-2"></i>فترة الاسترداد</h4>
+                            <div class="metric-value">1 شهر</div>
+                            <div class="metric-label">في السيناريو المتفائل</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="lead mt-4">
+                    يمثل مشروع نظام سوق قطع السيارات الذكي فرصة استثمارية استثنائية لفريق العمل الفردي، 
+                    مع إمكانية تحقيق ربحية عالية جداً تصل إلى 1,117% في السيناريو المتفائل. 
+                    المشروع مصمم خصيصاً للسوق السعودي مع امتثال كامل للقوانين والتنظيمات.
+                </p>
+            </div>
+        </div>
+
+        <!-- مصادر الإيرادات -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-money-bill-wave me-3"></i>مصادر الإيرادات المتوقعة</h2>
+                
+                <div class="revenue-stream">
+                    <h4><i class="fas fa-percentage me-2"></i>عمولات المبيعات (5-10%)</h4>
+                    <p><strong>المتوقع السنوي:</strong> 2.5 - 5 مليون ريال</p>
+                    <p>المصدر الرئيسي للإيرادات من عمولات على جميع المعاملات</p>
+                </div>
+
+                <div class="revenue-stream">
+                    <h4><i class="fas fa-calendar-alt me-2"></i>رسوم الاشتراك الشهرية</h4>
+                    <p><strong>المتوقع السنوي:</strong> 500,000 ريال</p>
+                    <p>اشتراكات شهرية للمحلات والخدمات المتقدمة</p>
+                </div>
+
+                <div class="revenue-stream">
+                    <h4><i class="fas fa-truck me-2"></i>رسوم الخدمات الإضافية</h4>
+                    <p><strong>المتوقع السنوي:</strong> 300,000 ريال</p>
+                    <p>خدمات التوصيل السريع والصيانة المتقدمة</p>
+                </div>
+
+                <div class="revenue-stream">
+                    <h4><i class="fas fa-ad me-2"></i>الإعلانات المدفوعة</h4>
+                    <p><strong>المتوقع السنوي:</strong> 200,000 ريال</p>
+                    <p>إعلانات للمحلات المميزة والمنتجات المميزة</p>
+                </div>
+
+                <div class="revenue-stream">
+                    <h4><i class="fas fa-shipping-fast me-2"></i>خدمات التوصيل</h4>
+                    <p><strong>المتوقع السنوي:</strong> 100,000 ريال</p>
+                    <p>عمولات على خدمات التوصيل والشحن</p>
+                </div>
+
+                <div class="financial-highlight mt-4">
+                    <h4><i class="fas fa-calculator me-2"></i>إجمالي الإيرادات المتوقعة</h4>
+                    <div class="metric-value">3.6 - 6.1 مليون ريال</div>
+                    <div class="metric-label">سنوياً حسب السيناريو</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- تحليل التكاليف -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-calculator me-3"></i>تحليل التكاليف المُحدث لفريق العمل الفردي</h2>
+                
+                <div class="cost-breakdown">
+                    <h4><i class="fas fa-code me-2"></i>تكاليف التطوير والصيانة</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>راتب المطور (سنوياً):</strong> 120,000 ريال</p>
+                            <p><strong>أدوات التطوير:</strong> 10,000 ريال</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>البرامج والتراخيص:</strong> 15,000 ريال</p>
+                            <p><strong>الاستشارات التقنية:</strong> 20,000 ريال</p>
+                        </div>
+                    </div>
+                    <div class="metric-value">165,000 ريال</div>
+                    <div class="metric-label">إجمالي تكاليف التطوير</div>
+                </div>
+
+                <div class="cost-breakdown">
+                    <h4><i class="fas fa-server me-2"></i>تكاليف البنية التحتية</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>استضافة السيرفرات:</strong> 24,000 ريال</p>
+                            <p><strong>قاعدة البيانات:</strong> 12,000 ريال</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>CDN وخدمات السحابة:</strong> 18,000 ريال</p>
+                            <p><strong>خدمات الأمان:</strong> 15,000 ريال</p>
+                        </div>
+                    </div>
+                    <div class="metric-value">69,000 ريال</div>
+                    <div class="metric-label">إجمالي البنية التحتية</div>
+                </div>
+
+                <div class="cost-breakdown">
+                    <h4><i class="fas fa-cogs me-2"></i>تكاليف التشغيل</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>الكهرباء والإنترنت:</strong> 6,000 ريال</p>
+                            <p><strong>الصيانة الدورية:</strong> 12,000 ريال</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>النسخ الاحتياطية:</strong> 6,000 ريال</p>
+                            <p><strong>الدعم الفني:</strong> 18,000 ريال</p>
+                        </div>
+                    </div>
+                    <div class="metric-value">42,000 ريال</div>
+                    <div class="metric-label">إجمالي التشغيل</div>
+                </div>
+
+                <div class="cost-breakdown">
+                    <h4><i class="fas fa-bullhorn me-2"></i>تكاليف التسويق والدعاية</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>إعلانات Google Ads:</strong> 50,000 ريال</p>
+                            <p><strong>إعلانات وسائل التواصل:</strong> 30,000 ريال</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>محتوى تسويقي:</strong> 20,000 ريال</p>
+                            <p><strong>العلاقات العامة:</strong> 15,000 ريال</p>
+                        </div>
+                    </div>
+                    <div class="metric-value">115,000 ريال</div>
+                    <div class="metric-label">إجمالي التسويق</div>
+                </div>
+
+                <div class="cost-breakdown">
+                    <h4><i class="fas fa-building me-2"></i>تكاليف التكامل الحكومي</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>تراخيص SABER:</strong> 10,000 ريال</p>
+                            <p><strong>تكامل ZATCA:</strong> 15,000 ريال</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>تكامل إدارة المرور:</strong> 10,000 ريال</p>
+                            <p><strong>الامتثال القانوني:</strong> 20,000 ريال</p>
+                        </div>
+                    </div>
+                    <div class="metric-value">55,000 ريال</div>
+                    <div class="metric-label">إجمالي التكامل الحكومي</div>
+                </div>
+
+                <div class="cost-breakdown">
+                    <h4><i class="fas fa-shield-alt me-2"></i>تكاليف أخرى</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>التأمين:</strong> 5,000 ريال</p>
+                            <p><strong>الاستشارات القانونية:</strong> 10,000 ريال</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>الطوارئ:</strong> 15,000 ريال</p>
+                            <p><strong>التطوير المستقبلي:</strong> 25,000 ريال</p>
+                        </div>
+                    </div>
+                    <div class="metric-value">55,000 ريال</div>
+                    <div class="metric-label">إجمالي التكاليف الأخرى</div>
+                </div>
+
+                <div class="financial-highlight mt-4">
+                    <h4><i class="fas fa-total me-2"></i>إجمالي التكاليف السنوية</h4>
+                    <div class="metric-value">501,000 ريال</div>
+                    <div class="metric-label">للفريق الفردي</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- تحليل الربحية -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-chart-pie me-3"></i>تحليل الربحية المُحدث</h2>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white;">
+                            <h4>السيناريو المتحفظ</h4>
+                            <div class="metric-value">618%</div>
+                            <div class="metric-label">معدل العائد</div>
+                            <p><strong>الإيرادات:</strong> 3.6 مليون ريال</p>
+                            <p><strong>صافي الربح:</strong> 3.099 مليون ريال</p>
+                            <p><strong>فترة الاسترداد:</strong> 2 شهر</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white;">
+                            <h4>السيناريو المتفائل</h4>
+                            <div class="metric-value">1,117%</div>
+                            <div class="metric-label">معدل العائد</div>
+                            <p><strong>الإيرادات:</strong> 6.1 مليون ريال</p>
+                            <p><strong>صافي الربح:</strong> 5.599 مليون ريال</p>
+                            <p><strong>فترة الاسترداد:</strong> 1 شهر</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white;">
+                            <h4>السيناريو المتوسط</h4>
+                            <div class="metric-value">868%</div>
+                            <div class="metric-label">معدل العائد</div>
+                            <p><strong>الإيرادات:</strong> 4.85 مليون ريال</p>
+                            <p><strong>صافي الربح:</strong> 4.349 مليون ريال</p>
+                            <p><strong>فترة الاسترداد:</strong> 1.4 شهر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مزايا فريق العمل الفردي -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-user-check me-3"></i>مزايا فريق العمل الفردي</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-savings me-2"></i>توفير في التكاليف</h5>
+                            <p>لا توجد رواتب إضافية أو تكاليف إدارية</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-rocket me-2"></i>سرعة في اتخاذ القرارات</h5>
+                            <p>لا توجد بيروقراطية أو إجراءات معقدة</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-mobile-alt me-2"></i>مرونة في العمل</h5>
+                            <p>إمكانية العمل من أي مكان وفي أي وقت</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-crown me-2"></i>تحكم كامل</h5>
+                            <p>إدارة شاملة للمشروع بدون تدخل خارجي</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-chart-line me-2"></i>ربحية عالية</h5>
+                            <p>جميع الأرباح للمطور الوحيد</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-bolt me-2"></i>استجابة سريعة</h5>
+                            <p>سرعة في التطوير والتحديثات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- خطة التنفيذ المالية -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-road me-3"></i>خطة التنفيذ المالية</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h5><i class="fas fa-play me-2"></i>المرحلة الأولى (شهر واحد) - الاستثمار المحدود</h5>
+                        <p><strong>الميزانية:</strong> 50,000 ريال للبداية</p>
+                        <p><strong>التركيز:</strong> تطوير النظام الأساسي والتحسينات الحرجة</p>
+                        <p><strong>الهدف:</strong> إطلاق تجريبي مع مستخدمين محدودين</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h5><i class="fas fa-chart-bar me-2"></i>المرحلة الثانية (شهرين) - التركيز على الربحية</h5>
+                        <p><strong>الميزانية:</strong> إعادة استثمار الأرباح الأولية</p>
+                        <p><strong>التركيز:</strong> التسويق وبناء قاعدة المستخدمين</p>
+                        <p><strong>الهدف:</strong> تحقيق الربحية المستدامة</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h5><i class="fas fa-expand me-2"></i>المرحلة الثالثة (3 أشهر) - التوسع</h5>
+                        <p><strong>الميزانية:</strong> إعادة استثمار الأرباح</p>
+                        <p><strong>التركيز:</strong> إضافة ميزات متقدمة والتوسع الجغرافي</p>
+                        <p><strong>الهدف:</strong> توسيع قاعدة المستخدمين والخدمات</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h5><i class="fas fa-globe me-2"></i>المرحلة الرابعة (6 أشهر) - التوسع الإقليمي</h5>
+                        <p><strong>الميزانية:</strong> احتياطي مالي للطوارئ والتوسع</p>
+                        <p><strong>التركيز:</strong> التوسع لمدن جديدة وخدمات إضافية</p>
+                        <p><strong>الهدف:</strong> الهيمنة على السوق المحلي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- التوصيات المالية -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-lightbulb me-3"></i>التوصيات المالية</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-piggy-bank me-2"></i>البدء بالاستثمار المحدود</h5>
+                            <p>50,000 ريال للبداية مع خطة تطوير مرحلية</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-target me-2"></i>التركيز على الربحية السريعة</h5>
+                            <p>تحقيق الأرباح خلال 3 أشهر من الإطلاق</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-recycle me-2"></i>إعادة استثمار الأرباح</h5>
+                            <p>تطوير النظام وتحسين الخدمات</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-shield-alt me-2"></i>بناء احتياطي مالي</h5>
+                            <p>للطوارئ والتوسع المستقبلي</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-chart-line me-2"></i>التخطيط للتوسع</h5>
+                            <p>بعد تحقيق الربحية المستدامة</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timeline-item">
+                            <h5><i class="fas fa-balance-scale me-2"></i>مراقبة الأداء المالي</h5>
+                            <p>تحديث الخطط بناءً على النتائج الفعلية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الخلاصة -->
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="section-title"><i class="fas fa-check-circle me-3"></i>الخلاصة</h2>
+                
+                <div class="financial-highlight">
+                    <h4><i class="fas fa-trophy me-2"></i>النتيجة النهائية</h4>
+                    <p class="lead">
+                        يمثل مشروع نظام سوق قطع السيارات الذكي فرصة استثمارية استثنائية لفريق العمل الفردي، 
+                        مع إمكانية تحقيق ربحية عالية جداً تصل إلى 1,117% في السيناريو المتفائل. 
+                        المشروع مصمم خصيصاً للسوق السعودي مع امتثال كامل للقوانين والتنظيمات.
+                    </p>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white;">
+                            <div class="metric-value">1,117%</div>
+                            <div class="metric-label">أعلى معدل عائد متوقع</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white;">
+                            <div class="metric-value">1 شهر</div>
+                            <div class="metric-label">أسرع فترة استرداد</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white;">
+                            <div class="metric-value">5.6 مليون</div>
+                            <div class="metric-label">أعلى ربح صافي متوقع</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success mt-4">
+                    <h5><i class="fas fa-thumbs-up me-2"></i>التوصية النهائية</h5>
+                    <p>
+                        <strong>البدء فوراً في تطوير النظام</strong> مع التركيز على الربحية السريعة والتحسينات الأساسية. 
+                        المشروع جاهز للتطوير والتنفيذ مع إمكانية تحقيق نتائج مالية استثنائية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
